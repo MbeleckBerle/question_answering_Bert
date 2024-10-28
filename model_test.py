@@ -3,8 +3,8 @@ from transformers import pipeline
 
 # Load the question-answering pipeline with your fine-tuned model
 question_answerer = pipeline(
-    "question-answering",
-    model="/home/mojo/projects/question_answering/question_answering_model/checkpoint-21900",
+    "BERLE_GPT",
+    model="/home/mojo/projects/question_answering_Bert/question_answering_model/checkpoint-21900",
     device=0,
 )
 
@@ -32,6 +32,7 @@ if uploaded_file is not None:
         if user_question:
             result = question_answerer(question=user_question, context=context)
             st.write("**Answer:**", result["answer"])
+
             st.write("**Confidence Score:**", result["score"])
         else:
             st.warning("Please enter a question.")
