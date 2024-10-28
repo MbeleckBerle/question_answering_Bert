@@ -1,3 +1,7 @@
 encoding_test.csv
 encoding_train.csv
+children_story.txt:Zone.Identifier
+model_test.py:Zone.Identifier
+qa_model_train.ipynb:Zone.Identifier
+.gitignore:Zone.Identifier
 question_answering_model/
