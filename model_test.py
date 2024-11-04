@@ -3,7 +3,7 @@ from transformers import pipeline
 
 # Load the question-answering pipeline with your fine-tuned model
 question_answerer = pipeline(
-    "BERLE_GPT",
+    "question-answering",
     model="/home/mojo/projects/question_answering_Bert/question_answering_model/checkpoint-21900",
     device=0,
 )
@@ -17,7 +17,7 @@ def load_context_from_txt(file_path):
 
 
 # Streamlit UI
-st.title("Question Answering App")
+st.title("BERLE GPT")
 
 # File uploader for the text file
 uploaded_file = st.file_uploader("Upload a text file with context", type=["txt"])
