@@ -17,7 +17,7 @@ def load_context_from_txt(file_path):
 
 
 # Streamlit UI
-st.title("BERLE GPT")
+st.title("BerleGPT")
 
 # File uploader for the text file
 uploaded_file = st.file_uploader("Upload a text file with context", type=["txt"])
