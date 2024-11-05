@@ -1,5 +1,6 @@
 Instructions:
 The current version is setup for text files and can take multiple text files
+
 1. run the notebook in google colab to train the model
 2. in the model_test.py replace model path with the path of the model checkpoint
 
